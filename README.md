@@ -1,16 +1,7 @@
-## ⚠️ Notice
-This template is no longer under active maintenance, it's out-of-date with the state of the ethereum ecosystem. Some reccomendations for replacing this would be to use the [Next.js + TypeScript + ConnectKit](https://github.com/family/connectkit/tree/main/examples/nextjs) example from Family, using [wagmi](https://wagmi.sh) directly or [web3modal](https://github.com/WalletConnect/web3modal).
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmirshko%2Fnext-web3-boilerplate)
+## Notice
+This template is no longer under active maintenance, it's out-of-date with the state of the ethereum ecosystem.
 
 This is a default [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), customized as the default boilerplate for new Web3 projects.
-
-## Features
-
-- Separate packages from [ethers.js](https://docs.ethers.io/v5/) for improved tree-shaking, often only ethers Contracts
-- Hooks-first approach to fetching and caching data from Contracts and memoization for performance with [SWR](https://swr.vercel.app)
-- [web3-react](https://github.com/NoahZinsmeister/web3-react) for ease of connecting to Web3 providers with a solid API
-- Auto-generates types for the contract ABIs in the `/contracts` folder via [TypeChain](https://github.com/ethereum-ts/TypeChain)
 
 ### Auto Contract Type Generation
 
@@ -27,10 +18,6 @@ export default function useMyContract() {
   return useContract<MY_CONTRACT>(CONTRACT_ADDRESS, MY_CONTRACT_ABI);
 }
 ```
-
-## Previous Art
-
-- [NoahZinsmeister/hypertext](https://github.com/NoahZinsmeister/hypertext)
 
 ## Getting Started
 
